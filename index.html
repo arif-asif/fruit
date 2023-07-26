@@ -24,7 +24,7 @@
 
 </head>
 <body>
-    <nav class=" w-auto mx-3 md:mx-5 lg:mx-20">
+    <nav class=" w-auto mx-5 md:mx-5 lg:mx-24">
         <div class="navbar text-slate-50 bg-red-500 rounded-full justify-around w-auto my-5">
             <div class="navbar-center">
               <div class="dropdown">
@@ -57,7 +57,8 @@
             </div>
           </div>
     </nav>
-    <section class=" w-auto mx-3 md:mx-5 flex flex-col justify-between items-center lg:mx-20">
+
+    <section class=" w-auto mx-5 md:mx-5 flex flex-col justify-between items-center lg:mx-24">
       <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full">
           <img src="./images/banner1.png" class="w-full darken" />
@@ -88,12 +89,12 @@
           </div>
         </div>
       </div>
-      <div class="absolute text-white flex flex-col content-center justify-center w-1/2 items-center gap-2 md: mt-5 lg: mt-16">
-        <h1 class="text-center font-bold w-72 text-md lg:text-4xl">Exotic tastes at your doorstep</h1>
+      <div class="absolute text-white flex flex-col content-center justify-center w-1/2 items-center gap-2 mt-5 md:mt-12 lg:mt-20">
+        <h1 class="text-center font-bold w-72 text-md md:text-2xl lg:text-4xl">Exotic tastes at your doorstep</h1>
         <p class="text-xs text-center">We supply highly quality organic products</p>
         <button class="btn btn-xs bg-red-500 text-xs text-white border-0 md:btn-sm lg:btn-md">Shop Now</button>
       </div>
-        <div class="hidden bg-white w-3/4 items-center relative justify-evenly gap-10 text-black text-center p-10 rounded-md shadow-md h-32 lg:flex -mt-16">
+        <div class="hidden bg-white w-3/4 items-center relative justify-evenly gap-10 text-black text-center p-10 rounded-md shadow-md h-40 lg:flex -mt-20">
           <div>
             <img src="./images/fruit1.png" alt="">
             <p>Strawberry</p>
@@ -117,5 +118,201 @@
     </div>
     </section>
 
+    <section class="my-32 w-auto mx-5 md:mx-5 lg:mx-24">
+        <div class="text-center lg:flex justify-between items-center gap-36">
+            <div>
+              <h1 class="text-3xl text-center lg:text-left font-bold">Deal of the day</h1>
+              <p class="text-xs my-5 lg:text-left">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="flex justify-center">
+              <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-3xl">
+                    <span style="--value:15;"></span>
+                  </span>
+                  days
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-3xl">
+                    <span style="--value:10;"></span>
+                  </span>
+                  hours
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-3xl">
+                    <span style="--value:24;"></span>
+                  </span>
+                  min
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-3xl">
+                    <span style="--value:40;"></span>
+                  </span>
+                  sec
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="flex flex-wrap justify-around items-center"> <!-- Card Container -->
+          
+            <!-- Card No-1 -->
+            <div class="card mt-10 w-auto bg-base-100 shadow-xl border">
+              <figure class="px-5 pt-5">
+                <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center py-1">
+                <h2 class="card-title border-b-2 px-4 py-4 text-base">12.90$ - 18.85$</h2>
+                <p class="text-xs">Apples</p>
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                </div>
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn btn-ghost text-red-500" onclick="my_modal_6.showModal()">Details</button>
+                <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box flex flex-col justify-center items-center w-3/4 py-10">
+                    <img src="./images/fruit6.png" alt="">
+                    <h3 class="font-bold text-lg">Apples</h3>
+                    <p class="py-4 w-3/4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="modal-action flex flex-col justify-center items-center gap-10">
+                      <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />      
+                      </div>
+                      <div>
+                        <button class="btn btn-outline">Close</button>
+                        <button class="btn btn-md bg-red-500">Buy Now</button>
+                      </div>    
+                    </div>
+                    </form>
+              </dialog>
+              </div>
+              </div>
+            <!-- Card No-2 -->
+            <div class="card mt-10 w-auto bg-base-100 shadow-xl border">
+              <figure class="px-5 pt-5">
+                <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center py-1">
+                <h2 class="card-title border-b-2 px-4 py-4 text-base">12.90$ - 18.85$</h2>
+                <p class="text-xs">Orange</p>
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                </div>
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn btn-ghost text-red-500" onclick="my_modal_7.showModal()">Details</button>
+                <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box flex flex-col justify-center items-center w-3/4 py-10">
+                    <img src="./images/fruit7.png" alt="">
+                    <h3 class="font-bold text-lg">Orange</h3>
+                    <p class="py-4 w-3/4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="modal-action flex flex-col justify-center items-center gap-10">
+                      <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />      
+                      </div>
+                      <div>
+                        <button class="btn btn-outline">Close</button>
+                        <button class="btn btn-md bg-red-500">Buy Now</button>
+                      </div>    
+                    </div>
+                    </form>
+              </dialog>
+              </div>
+              </div>             
+            <!-- Card No-3 -->
+            <div class="card mt-10 w-auto bg-base-100 shadow-xl border">
+            <figure class="px-5 pt-5">
+              <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center py-1">
+              <h2 class="card-title border-b-2 px-4 py-4 text-base">12.90$ - 18.85$</h2>
+              <p class="text-xs">Red Dragon</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="btn btn-ghost text-red-500" onclick="my_modal_8.showModal()">Details</button>
+              <dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle">
+                <form method="dialog" class="modal-box flex flex-col justify-center items-center w-3/4 py-10">
+                  <img src="./images/fruit8.png" alt="">
+                  <h3 class="font-bold text-lg">Red Dragon</h3>
+                  <p class="py-4 w-3/4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <div class="modal-action flex flex-col justify-center items-center gap-10">
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />      
+                    </div>
+                    <div>
+                      <button class="btn btn-outline">Close</button>
+                      <button class="btn btn-md bg-red-500">Buy Now</button>
+                    </div>    
+                  </div>
+                  </form>
+            </dialog>
+            </div>
+            </div>
+            <!-- Card No-4 -->
+            <div class="card mt-10 w-auto bg-base-100 shadow-xl border">
+              <figure class="px-5 pt-5">
+                <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center py-1">
+                <h2 class="card-title border-b-2 px-4 py-4 text-base">12.90$ - 18.85$</h2>
+                <p class="text-xs">Banana</p>
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                </div>
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn btn-ghost text-red-500" onclick="my_modal_9.showModal()">Details</button>
+                <dialog id="my_modal_9" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box flex flex-col justify-center items-center w-3/4 py-10">
+                    <img src="./images/fruit9.png" alt="">
+                    <h3 class="font-bold text-lg">Banana</h3>
+                    <p class="py-4 w-3/4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="modal-action flex flex-col justify-center items-center gap-10">
+                      <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />      
+                      </div>
+                      <div>
+                        <button class="btn btn-outline">Close</button>
+                        <button class="btn btn-md bg-red-500">Buy Now</button>
+                      </div>    
+                    </div>
+                    </form>
+              </dialog>
+              </div>
+              </div>
+        </div>
+        <div class="w-full flex justify-center items-center"><button class="mt-16 text-white btn btn-ghost bg-red-500">Shop All</button></div>
+    </section>
 </body>
 </html>
