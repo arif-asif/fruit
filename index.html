@@ -17,13 +17,16 @@
             font-family: 'Open Sans', sans-serif;
             font-family: 'Work Sans', sans-serif;
         }
+        .darken{
+          filter: brightness(60%);
+        }
     </style>
 
 </head>
 <body>
-    <nav class="mx-3 md:mx-5 lg:mx-15">
-        <div class="navbar text-slate-50 bg-red-500 rounded-full justify-around w-auto my-5 lg:mx-20">
-            <div class="navbar-center pl-3">
+    <nav class=" w-auto mx-3 md:mx-5 lg:mx-20">
+        <div class="navbar text-slate-50 bg-red-500 rounded-full justify-around w-auto my-5">
+            <div class="navbar-center">
               <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -49,42 +52,70 @@
             </div>
 
             <div class="navbar-end hidden px-1 lg:flex">
-            <input type="text" class="input rounded-full text-sm" placeholder="Search here" >
+            <input type="text" class="input rounded-full h-9 text-xs w-64" placeholder="Search here" >
             <i class="fa-solid absolute fa-magnifying-glass mr-5" style="color: #474747;"></i>
             </div>
           </div>
     </nav>
-    <section class="mx-3 md:mx-5 lg:mx-20">
+    <section class=" w-auto mx-3 md:mx-5 flex flex-col justify-between items-center lg:mx-20">
       <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full">
-          <img src="./images/banner1.png" class="w-full" />
+          <img src="./images/banner1.png" class="w-full darken" />
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" class="btn btn-circle">❮</a> 
-            <a href="#slide2" class="btn btn-circle">❯</a>
+            <a href="#slide4" class="btn btn-xs">❮</a> 
+            <a href="#slide2" class="btn btn-xs">❯</a>
           </div>
         </div> 
         <div id="slide2" class="carousel-item relative w-full">
-          <img src="./images/banner2.png" class="w-full" />
+          <img src="./images/banner2.png" class="w-full darken" />
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" class="btn btn-circle">❮</a> 
-            <a href="#slide3" class="btn btn-circle">❯</a>
+            <a href="#slide1" class="btn btn-xs">❮</a> 
+            <a href="#slide3" class="btn btn-xs">❯</a>
           </div>
         </div> 
         <div id="slide3" class="carousel-item relative w-full">
-          <img src="./images/banner3.png" class="w-full" />
+          <img src="./images/banner3.png" class="w-full darken" />
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" class="btn btn-circle">❮</a> 
-            <a href="#slide4" class="btn btn-circle">❯</a>
+            <a href="#slide2" class="btn btn-xs">❮</a> 
+            <a href="#slide4" class="btn btn-xs">❯</a>
           </div>
         </div> 
         <div id="slide4" class="carousel-item relative w-full">
-          <img src="./images/banner4.png" class="w-full" />
+          <img src="./images/banner4.png" class="w-full darken" />
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" class="btn btn-circle">❮</a> 
-            <a href="#slide1" class="btn btn-circle">❯</a>
+            <a href="#slide3" class="btn btn-xs">❮</a> 
+            <a href="#slide1" class="btn btn-xs">❯</a>
           </div>
         </div>
       </div>
+      <div class="absolute text-white flex flex-col content-center justify-center w-1/2 items-center gap-2 md: mt-5 lg: mt-16">
+        <h1 class="text-center font-bold w-72 text-md lg:text-4xl">Exotic tastes at your doorstep</h1>
+        <p class="text-xs text-center">We supply highly quality organic products</p>
+        <button class="btn btn-xs bg-red-500 text-xs text-white border-0 md:btn-sm lg:btn-md">Shop Now</button>
+      </div>
+        <div class="hidden bg-white w-3/4 items-center relative justify-evenly gap-10 text-black text-center p-10 rounded-md shadow-md h-32 lg:flex -mt-16">
+          <div>
+            <img src="./images/fruit1.png" alt="">
+            <p>Strawberry</p>
+          </div>
+          <div>
+            <img src="./images/fruit2.png" alt="">
+            <p>Orange</p>
+          </div>
+          <div>
+            <img src="./images/fruit3.png" alt="">
+            <p>Mango</p>
+          </div>
+          <div>
+            <img src="./images/fruit4.png" alt="">
+            <p>Strawberry</p>
+          </div>
+          <div>
+            <img src="./images/fruit5.png" alt="">
+            <p>Mango</p>
+        </div>
+    </div>
     </section>
+
 </body>
 </html>
